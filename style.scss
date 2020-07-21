@@ -1,0 +1,27 @@
+$color: red;
+
+ul {
+  font-size: 14px;
+  color: $color;
+}
+
+ol {
+  font-size: 18px;
+  color: $color;
+}
+
+
+%messages {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.success {
+  @extend %messages;
+  background: green;
+}
+
+.error {
+  @extend %messages;
+  background: red;
+}
